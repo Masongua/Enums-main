@@ -61,10 +61,11 @@
 /*: ### Instructions
  1. Make the Vehicle enumeration store raw values of the Character type.
 */
-enum Vehicle { // 1: Define the raw value type here
-    case truck
-    case boat
-    case airplane
+enum Vehicle: Character {
+    // 1: Define the raw value type here
+    case truck = "T"
+    case boat = "B"
+    case airplane = "A"
 }
 /*: 2.Explicitly assign the value of "T" to the truck case, "B" to the boat case, and "A" to the airplane case.
 */
@@ -74,7 +75,7 @@ enum Vehicle { // 1: Define the raw value type here
  3. Print the raw value of the airplane case to the console.
 */
 // 3: Print the raw value here
-
+print(Vehicle.airplane.rawValue)
 
 
 /*:
@@ -83,7 +84,7 @@ enum Vehicle { // 1: Define the raw value type here
  */
 // 4: Define constant here
 
- 
+let myBoat = Vehicle.boat.rawValue
 
 
 

@@ -54,7 +54,7 @@ enum Vehicle {
 
 // 1: Add instance of Vehicle here
 
- 
+var myRide = Vehicle.truck
 
 
 /*: 2. Create a switch statement that uses the myRide variable as the expression and has three cases in the switch statement:
@@ -65,7 +65,14 @@ enum Vehicle {
   */
 
 // 2: Add switch statement here
-
+switch myRide {
+case .airplane:
+    print("Let's fly to Peru")
+case .boat:
+    print("Let's sail to Hawaii")
+case .truck:
+    print("Let's drive to the store")
+}
 
 
 

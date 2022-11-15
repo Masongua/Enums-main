@@ -42,7 +42,11 @@
 /*: ## Instructions
  1. Define an enumeration named Vehicle.
 */
- 
+enum Vehicle {
+    case airplane
+    case boat
+    case truck
+}
 
 
 /*:
@@ -54,14 +58,14 @@
 /*:
  3. Initialize a variable value named myRide that is initially set to the truck case of the Vehicle type.
 */
-
+var myRide = Vehicle.truck
 
 
 
 /*:
   4. Set 'myRide' to be the airplane case using short dot syntax.
 */
-
+myRide = Vehicle.airplane
 
 
  
